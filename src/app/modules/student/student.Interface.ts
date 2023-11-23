@@ -3,7 +3,7 @@
 
 export type UserName = {
   firstName: string;
-  meddleName: string;
+  meddleName?: string;
   lastName: string;
 };
 
@@ -26,7 +26,7 @@ export type LocalGuardian = {
 export type Student = {
   id: string;
   name: UserName;
-  gender: 'Male' | 'Female';
+  gender: 'Male' | 'Female' | 'Other';
   dateOfBirth?: string;
   contractNo: string;
   emergencyContractNo: string;
