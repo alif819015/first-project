@@ -1,8 +1,8 @@
 import { TAcademicSemesterCode } from './academicSemester.Interface';
-import { academicSemester } from './academicSemester.model';
+import { AcademicSemester } from './academicSemester.model';
 
 const createAcademicSemesterIntoDB = async (payload: TAcademicSemesterCode) => {
-  const result = await academicSemester.create(payload);
+  const result = await AcademicSemester.create(payload);
   return result;
 };
 
